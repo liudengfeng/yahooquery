@@ -1,10 +1,11 @@
 from setuptools import setup, find_packages
 
 INSTALL_REQUIRES = [
-    'lxml==4.5.0',
+    'lxml>=4.5.0',
     'pandas>=0.24',
     'requests-futures==1.0.0',
-    'selenium==3.141.0',
+    # 不需要登陆模块
+    'selenium>=3.141.0',
 ]
 
 TEST_REQUIRES = [
